@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Italianno', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    position: relative;
+    display: flex;
+    background-color: white;
+    height: 10vh;
+    width: 100vw;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+nav div.logo {
+    display: block;
+    position: relative;
+    height: 20vh;
+    width: 20vh;
+    transform: translate(-200%, -50%) scale(.7);
+}
+
+nav h1 {
+    position: relative;
+    font-size: 7vh;
+    line-height: 10vh;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    font-size: 5vh;
+    list-style: none;
+    line-height: 10vh;
+}
+
+ul li {
+    display: block;
+    padding: 0 2vw;
+}
+
+li a {
+    text-decoration-line: none;
+    color: black;
+    text-decoration-color: red;
+    transition: 0.3s linear;
+}
+
+li a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+/* container with picture */
+
+.container {
+    position: relative;
+    height: 15vh;
+    width: 100%;
+    background-image: url("../images/pizza1gallery.jpg");
+    background-position-y: 45%;
+}
+
+.pizza {
+    display: block;
+    position: relative;
+    /* height: ; */
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
+
+.title {
+    display: block;
+    height: 8vh;
+    width: 80vh;
+    margin: 2vh auto;
+    /* background-image: url("images/Pizza9gallery-small.jpg"); */
+    background-color: red;
+    background-size: 150%;
+}
+
+.title h1 {
+    line-height: 8vh;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.items p,
+.items select,
+.items option {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/* footer */
+
+footer {
+    font-family: 'Italianno', Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-content: space-around;
+}
+
+.foot div {
+    display: flex;
+    font-size: 2rem;
+    height: 10vh;
+    width: 40%;
+    margin: 0 auto;
+    padding-left: 3vw;
+}
+
+.foot div p {
+    padding-left: 3vw;
+    line-height: 10vh;
+}

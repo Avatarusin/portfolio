@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Italianno', cursive, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    position: relative;
+    display: flex;
+    background-color: white;
+    height: 10vh;
+    width: 100vw;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+nav div.logo {
+    display: block;
+    position: relative;
+    height: 20vh;
+    width: 20vh;
+    transform: translate(-200%, -50%) scale(.7);
+}
+
+nav h1 {
+    position: relative;
+    font-size: 7vh;
+    line-height: 10vh;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    font-size: 5vh;
+    list-style: none;
+    line-height: 10vh;
+}
+
+ul li {
+    display: block;
+    padding: 0 2vw;
+}
+
+li a {
+    text-decoration-line: none;
+    color: black;
+    text-decoration-color: red;
+    transition: 0.3s linear;
+}
+
+li a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+/* footer */
+
+footer {
+    position: absolute;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-self: center;
+    align-content: space-around;
+    bottom: 0;
+    background-image: url("../images/deliveryPicture.jpeg ");
+    background-position-y: -20%;
+}
+
+.foot div {
+    display: flex;
+    font-size: 2rem;
+    height: 10vh;
+    width: 46%;
+    margin: 0 auto;
+    padding-left: 3vw;
+}
+
+.foot div p {
+    padding: 0 3vw;
+    line-height: 10vh;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+/* Div picture */
+
+.picture {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    background-image: url("../images/deliveryPicture.jpeg");
+    background-position-y: -80%;
+    font-size: 2rem;
+    padding-top: 3vh;
+}
+
+.picture h1,
+h2 {
+    position: relative;
+    background-color: rgba(255, 255, 255, .7);
+    width: 40%;
+    margin: 0 auto;
+}
+
+section {
+    position: relative;
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2vh auto;
+}
+
+.google {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px red solid;
+    align-self: center;
+}

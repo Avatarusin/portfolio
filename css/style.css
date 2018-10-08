@@ -1,0 +1,314 @@
+:root {
+    --white: rgba(255, 255, 255, .8);
+    --nv-cl: white;
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Italianno', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.main-page {
+    position: absolute;
+    width: 100vw;
+    height: 230vh;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-image: url("../images/pizzaBackground.jpg");
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    position: relative;
+    display: flex;
+    background-color: var(--nv-cl);
+    height: 10vh;
+    width: 100vw;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+nav h1 {
+    position: relative;
+    font-size: 7vh;
+    line-height: 10vh;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    font-size: 5vh;
+    list-style: none;
+    line-height: 10vh;
+}
+
+ul li {
+    display: block;
+    padding: 0 2vw;
+}
+
+li a {
+    text-decoration-line: none;
+    color: black;
+    text-decoration-color: red;
+    transition: 0.3s linear;
+}
+
+li a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+/* Even i Odd section general settings*/
+
+div:nth-child(even),
+div:nth-child(odd) {
+    position: relative;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: transparent;
+    /* overflow: hidden; */
+}
+
+div:nth-child(even) {
+    height: 30vh;
+}
+
+div:nth-child(odd) {
+    background-color: var(--nv-cl);
+}
+
+/* first div (section) logo */
+
+div.pizzaLogo {
+    position: relative;
+    display: block;
+    height: 50vh;
+    width: 100%;
+}
+
+div.logo {
+    display: block;
+    position: relative;
+    height: 20vh;
+    width: 20vh;
+    text-align: center;
+    left: 40vh;
+    top: 1vh;
+    margin: 5vh;
+}
+
+.logo img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 10vw;
+    top: 5vh;
+    background-color: var(--white);
+}
+
+div.pizzaLogo h2,
+div.pizzaLogo h3 {
+    display: block;
+    position: absolute;
+    left: 22vw;
+    top: 29vh;
+    margin: 5px auto;
+    padding: 0 2vw;
+    font-size: 5vh;
+    letter-spacing: 2px;
+}
+
+div.pizzaLogo h2 {
+    font-size: 6vh;
+    background-color: var(--white);
+    /* background-color: rgba(3, 0, 0, 0.7); */
+}
+
+div.pizzaLogo h3 {
+    background-color: var(--white);
+    top: 37vh;
+    padding: 3px 20px;
+    font-size: 4vh;
+}
+
+/* Second section */
+
+div.main-article {
+    position: relative;
+    display: flex;
+    width: 60%;
+    height: 50vh;
+    margin: 0 auto;
+    overflow: hidden;
+    align-content: center;
+}
+
+div.ourMenu {
+    font-size: 5vh;
+    flex-direction: column;
+    width: 60%;
+    margin: 3vh;
+    align-items: center;
+}
+
+div.ourMenu h2 {
+    display: block;
+    left: 10vh;
+    justify-content: center;
+}
+
+div.ourMenu p {
+    font-size: 5vh;
+}
+
+div.multiplePictures {
+    height: 100%;
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 2vh 0 0 5vh;
+}
+
+
+div.multiplePictures img {
+    flex-basis: 45%;
+    flex-wrap: wrap;
+    height: 15vh;
+    width: 15vh;
+    padding: 1vh;
+    transform: scale(1);
+    transition: 0.2s linear;
+}
+
+div.multiplePictures img:hover {
+    transform: scale(1.2);
+}
+
+
+
+div.ourMenu a {
+    color: red;
+    text-decoration-line: none;
+}
+
+/* free home delivery image */
+
+.freeHome {
+    display: block;
+    align-items: center;
+}
+
+.freeHome img {
+    position: relative;
+    display: block;
+    background-color: var(--white);
+    height: 20vh;
+    width: 50vw;
+    margin: 0 auto;
+    left: -1vh;
+}
+
+/* Gallery article */
+
+div.options {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100vw;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.options h3,
+.options p,
+.options article {
+    font-size: 4vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60%;
+    align-items: center;
+}
+
+.gallerySmall img,
+.gallerySmall h3,
+.gallerySmall p {
+    align-items: center;
+    display: flex;
+    flex-basis: 25%;
+    align-self: center;
+    height: 8vw;
+    width: 10vh;
+}
+
+.gallerySmall p {
+    font-weight: bold;
+}
+
+/* Last List */
+
+#lastList {
+    display: flex;
+    position: relative;
+    height: 50vh;
+    background-color: transparent;
+}
+
+div.lastListSegment {
+    display: flex;
+    background-color: transparent;
+    height: 25vh;
+    width: 32vh;
+    margin: 0 auto;
+    align-self: center;
+    background-color: var(--white);
+    align-content: space-between;
+    flex-direction: column;
+    font-size: 3.5rem;
+    justify-content: center;
+}
+
+div.lastListSegment h3,
+div.lastListSegment p {
+    align-self: center;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--nv-cl);
+    align-content: space-around;
+}
+
+.foot div {
+    display: flex;
+    font-size: 2rem;
+    height: 10vh;
+    width: 40%;
+    margin: 0 auto;
+    padding-left: 3vw;
+}
+
+.foot div p {
+    padding-left: 3vw;
+    line-height: 10vh;
+}
