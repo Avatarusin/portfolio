@@ -5,94 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Porto Soleggiato Pizza</title>
 </head>
 
-<body class="main-page">
-    <section>
-        <nav class="nav">
-            <h1> Porto Soleggiato Pizza</h1>
-            <ul class="navList">
-                <li class="menu"><a href="index.html" id="href">Main</a></li>
-                <li class="menu"><a href="menu.html" id="href">Menu</a></li>
-                <li class="menu"><a href="shop.html" id="href">Shop</a></li>
-                <li class="menu"><a href="gallery.html" id="href">Gallery</a></li>
-                <li class="menu hamburger"><a href="signIn.html" id="href">Sign in / Log in</a></li>
+<body>
+    <header class="page-header">
+        <a href="index.html" title="Go back to homepage" class="page-home">
+            <h1 class="page-logo">Porto Soleggiato Pizza</h1>
+        </a>
+        <nav class="page-nav">
+            <ul class="navigation-menu">
+                <li><a href="menu.html" id="href">Menu</a></li>
+                <li><a href="shop.html" id="href">Shop</a></li>
+                <li><a href="gallery.html" id="href">Gallery</a></li>
+                <li class="sign-up"><a href="signIn.html">Log in</a></li>
             </ul>
+            <button type="button" title="Open menu" class="hamburger"><i class="fas fa-bars hamburger-icon"></i><i
+                    class="fas fa-times close-icon"></i></button>
         </nav>
-        <div class="pizzaLogo even">
-            <div class="logo">
-                <img class="logo" src="images/pizzaLogo.png" alt="Pizza logo">
+    </header>
+    <main class="main-page">
+        <div class="main-page-pizza-container">
+            <div class="main-page-logo">
+                <img class="main-page-logo-img" src="images/pizzaLogo.png" alt="Pizza logo">
             </div>
             <h2>Really fresh and tasty <span>Italian Pizza</span></h2>
             <br>
             <h3>Please see our <span>Best Deals Today!</span></h3>
         </div>
-        <div class="odd">
-            <div class="main-article">
-                <div class="ourMenu">
+        <div class="main-article">
+            <div class="main-article-show">
+                <div class="main-article-our-menu">
                     <h2>Our Menu</h2>
                     <p>Why you want to try our <strong>Pizza</strong>? Because we cook with passion. We
                         use only fresh ingrendients to make <strong>the best Pizza in the world!</strong></p>
                     <a href="menu.html" class="menu">See Menu</a>
                 </div>
-                <div class="multiplePictures">
-                    <img src="images/bruchette1.jpg">
+                <div class="multiple-pictures">
+                    <img src="images/bruchette1.png">
                     <img src="images/Pizza1.png">
                     <img src="images/pasta1.png">
                     <img src="images/dips1.png">
                 </div>
             </div>
         </div>
-        <div class="freeHome"><img src="images/Best-Home-Delivery-Foods.png">
-        </div>
-        <div class="options odd">
-            <article class="gallerySmall">
+        <div class="empty-container"></div>
+        <div class="main-article options">
+            <figure class="gallery-small">
                 <img src="images/CardLogos.png" alt="Card logos">
                 <h3>Pay by Card or Cash</h3>
                 <p>From now on you can pay as well by credit or debit card.</p>
-            </article>
-            <article class="gallerySmall">
+            </figure>
+            <figure class="gallery-small">
                 <img src="images/freeHomeDelivery.jpg" alt="Free home delivery">
                 <h3>Delivery for free</h3>
                 <p>If you order more than 20£, we will deliver to you for free.</p>
-            </article>
-            <article class="gallerySmall">
+            </figure>
+            <figure class="gallery-small">
                 <img src="images/pizzaMain3.jpg" alt="Picture of pizza">
                 <h3>Fast deliver</h3>
                 <p>We deliver in 30-40 minutes</p>
-            </article>
+            </figure>
         </div>
-        <div class="lastEmpty" id="lastList">
-            <div class="lastListSegment list1">
-                <h3><i class="far fa-user"></i> 93,3%</h3>
+        <div class="last-container">
+            <div class="last-empty-container-segment">
+                <h3>93,3%</h3>
                 <p>Happy clients</p>
             </div>
-            <div class="lastListSegment list2">
-                <h3><i class="far fa-clock"></i>30-40 mins</h3>
+            <div class="last-empty-container-segment">
+                <h3>30-40 mins</h3>
                 <p>Fast Delivery</p>
             </div>
-            <div class="lastListSegment list3">
-                <h3><i class="far fa-clock"></i>New option</h3>
+            <div class="last-empty-container-segment">
+                <h3>New option</h3>
                 <p>Pay by card</p>
             </div>
-            <div class="lastListSegment list4">
-                <h3><i class="far fa-list-alt"></i>923</h3>
+            <div class="last-empty-container-segment">
+                <h3>923</h3>
                 <p>Signed acoounts</p>
             </div>
         </div>
-    </section>
+    </main>
     <footer class="foot">
         <div>
-            <p>Uncopyright &copy; 2018 <strong>Sebastian W.</strong></p>
+            <p>&copy; 2018 <strong>Sebastian W.</strong></p>
             <p>This site is protected by law</p>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

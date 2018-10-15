@@ -13,33 +13,39 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <h1> Porto Soleggiato Pizza</h1>
-        <ul class="navList">
-            <li class="menu"><a href="index.html" id="href">Main</a></li>
-            <li class="menu"><a href="menu.html" id="href">Menu</a></li>
-            <li class="menu"><a href="shop.html" id="href">Shop</a></li>
-            <li class="menu"><a href="gallery.html" id="href">Gallery</a></li>
-            <li class="menu"><a href="signIn.html" id="href">Sign in / Log in</a></li>
-        </ul>
-    </nav>
+    <header class="page-header">
+        <a href="index.html" title="Go back to homepage" class="page-home">
+            <h1 class="page-logo">Porto Soleggiato Pizza</h1>
+        </a>
+        <nav class="page-nav">
+            <ul class="navigation-menu">
+                <li><a href="menu.html" id="href">Menu</a></li>
+                <li><a href="shop.html" id="href">Shop</a></li>
+                <li><a href="gallery.html" id="href">Gallery</a></li>
+                <li class="sign-up"><a href="signIn.html">Log in</a></li>
+            </ul>
+            <button type="button" title="Open menu" class="hamburger"><i class="fas fa-bars hamburger-icon"></i><i
+                    class="fas fa-times close-icon"></i></button>
+        </nav>
+    </header>
     <div class="picture">
         <h1>Fast Delivery</h1>
         <h2>Always on time</h2>
     </div>
-    <section>
+    <section class="section">
         <h2>Check on map where you can find Us</h2>
-        <div class="google">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6740.727978286855!2d13.316243661482268!3d38.19615239560636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb858346fc25b84!2sLa+Vecchia+Masseria!5e0!3m2!1spl!2suk!4v1538565370559"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d195.96751437543801!2d13.319566!3d38.198746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb858346fc25b84!2sLa+Vecchia+Masseria!5e0!3m2!1spl!2suk!4v1539545046293"
+                width="1920" height="1024" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </section>
     <footer class="foot">
         <div>
-            <p>Uncopyright &copy; 2018 <strong>Sebastian W.</strong></p>
+            <p>&copy; 2018 <strong>Sebastian W.</strong></p>
             <p>This site is protected by law</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

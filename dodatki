@@ -1,193 +1,91 @@
 Grafika pizzy :
 <a href=https://pl.pngtree.com>Grafika z pngtree.com</a>
 
-/* Sign In section */
 
-/* #background {
-    display: block;
-    width: 100%;
-    height: 80vh;
-    background-color: transparent;
-    z-index: -999;
-} */
 
-.sign-in-section {
-    position: relative;
-    display: block;
-    height: 80vh;
-    width: 100%;
+img{
+   max-width: 100%;
+   height:auto;
+   width:auto;
 }
 
-.sign-in-section .imageBackground {
-    position: relative;
-    display: flex;
-    height: 80vh;
-    width: 100vw;
-}
+@media (min-width: 48em) and (max-width: 86em)
 
-/* Log in box */
 
-.log-box {
-    position: absolute;
-    height: 60vh;
-    width: 20vw;
-    background-color: rgba(255, 255, 255, .9);
-    top: 5vh;
-    left: 10vh;
-    text-align: center;
-    padding: 5vh;
-}
+<div class="odd">
+            <div class="main-article">
+                <div class="ourMenu">
+                    <h2>Our Menu</h2>
+                    <p>Why you want to try our <strong>Pizza</strong>? Because we cook with passion. We
+                        use only fresh ingrendients to make <strong>the best Pizza in the world!</strong></p>
+                    <a href="menu.html" class="menu">See Menu</a>
+                </div>
+                <div class="multiplePictures">
+                    <img src="images/bruchette1.jpg">
+                    <img src="images/Pizza1.png">
+                    <img src="images/pasta1.png">
+                    <img src="images/dips1.png">
+                </div>
+            </div>
+        </div>
+        <div class="freeHome"><img src="images/Best-Home-Delivery-Foods.png">
+        </div>
+        <div class="options odd">
+            <article class="gallerySmall">
+                <img src="images/CardLogos.png" alt="Card logos">
+                <h3>Pay by Card or Cash</h3>
+                <p>From now on you can pay as well by credit or debit card.</p>
+            </article>
+            <article class="gallerySmall">
+                <img src="images/freeHomeDelivery.jpg" alt="Free home delivery">
+                <h3>Delivery for free</h3>
+                <p>If you order more than 20£, we will deliver to you for free.</p>
+            </article>
+            <article class="gallerySmall">
+                <img src="images/pizzaMain3.jpg" alt="Picture of pizza">
+                <h3>Fast deliver</h3>
+                <p>We deliver in 30-40 minutes</p>
+            </article>
+        </div>
+        <div class="lastEmpty" id="lastList">
+            <div class="lastListSegment list1">
+                <h3><i class="far fa-user"></i> 93,3%</h3>
+                <p>Happy clients</p>
+            </div>
+            <div class="lastListSegment list2">
+                <h3><i class="far fa-clock"></i>30-40 mins</h3>
+                <p>Fast Delivery</p>
+            </div>
+            <div class="lastListSegment list3">
+                <h3><i class="far fa-clock"></i>New option</h3>
+                <p>Pay by card</p>
+            </div>
+            <div class="lastListSegment list4">
+                <h3><i class="far fa-list-alt"></i>923</h3>
+                <p>Signed acoounts</p>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div>
+            <p>Uncopyright &copy; 2018 <strong>Sebastian W.</strong></p>
+            <p>This site is protected by law</p>
+        </div>
+    </footer>
 
-.log-box h1 {
-    font-size: 3rem;
-    padding-bottom: 2vh;
-}
 
-.log-box legend {
-    text-align: center;
-    font-size: 4rem;
-    background-color: rgba(255, 0, 0, 0.8);
-    border-radius: 50%;
-    height: 10vh;
-    width: 10vh;
-    color: white;
-    line-height: 12vh;
-}
 
-.log-box-form p {
-    margin: 0;
-    padding: 0;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.log-box-form input {
-    width: 100%;
-    margin-bottom: 2vh;
-}
-
-.log-box-form input[type="submit"],
-.log-box-form input[type="email"],
-.log-box-form input[type="password"],
-.log-box-form a {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.log-box-form input[type="email"],
-.log-box-form input[type="password"] {
-    border: none;
-    border-bottom: 1px solid red;
-    background: transparent;
-    outline: none;
-    height: 2vh;
-    font-size: .6rem;
-}
-
-.log-box-form input[type="submit"] {
-    width: 50%;
-    height: 3vh;
-    margin-top: 2vh;
-    text-align: center;
-    background-color: red;
-    border-radius: 20px;
-    color: white;
-    transition: .5s linear;
-}
-
-.log-box-form input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
-}
-
-.log-box-form a {
-    margin-top: 4vh;
-    text-decoration: none;
-    font-size: 1.5vh;
-    line-height: 4vh;
-    color: lightcoral;
-}
-
-.log-box-form a:hover {
-    margin-top: 4vh;
-    text-decoration: none;
-    font-size: 1.5vh;
-    line-height: 4vh;
-    color: black;
-}
-
-/* Sign in box */
-
-.sign-box {
-    position: absolute;
-    height: 67vh;
-    width: 20vw;
-    background-color: rgba(255, 255, 255, .9);
-    top: 4vh;
-    left: 60vh;
-    text-align: center;
-    padding: 5vh;
-}
-
-.sign-box h1 {
-    font-size: 3rem;
-    padding-bottom: 1vh;
-}
-
-.sign-box legend {
-    text-align: center;
-    font-size: 4rem;
-    background-color: rgba(255, 0, 0, 0.8);
-    border-radius: 50%;
-    height: 10vh;
-    width: 10vh;
-    color: white;
-    line-height: 12vh;
-}
-
-.sign-box-form p {
-    margin: 0;
-    padding: 0;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.sign-box-form input {
-    width: 100%;
-    margin-bottom: 2vh;
-}
-
-.sign-box-form input[type="submit"],
-.sign-box-form input[type="text"],
-.sign-box-form input[type="email"],
-.sign-box-form input[type="password"] {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.sign-box-form input[type="email"],
-.sign-box-form input[type="text"],
-.sign-box-form input[type="password"] {
-    border: none;
-    border-bottom: 1px solid red;
-    background: transparent;
-    outline: none;
-    height: 2vh;
-    font-size: .6rem;
-}
-
-.sign-box-form input[type="submit"] {
-    width: 50%;
-    height: 3vh;
-    margin-top: 2vh;
-    text-align: center;
-    background-color: red;
-    border-radius: 20px;
-    color: white;
-    transition: .5s linear;
-}
-
-.sign-box-form input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
-}
+    <header class="page-header">
+        <a href="index.html" title="Go back to homepage">
+            <h1 class="page-logo">Porto Soleggiato Pizza</h1>
+        </a>
+        <nav class="page-nav">
+            <ul class="navigation-menu">
+                <li><a href="menu.html" id="href">Menu</a></li>
+                <li><a href="shop.html" id="href">Shop</a></li>
+                <li><a href="gallery.html" id="href">Gallery</a></li>
+                <li class="sign-up"><a href="signIn.html" >Log in</a></li>
+            </ul>
+            <button type="button" title="Open menu" class="hamburger"><i class="fas fa-bars hamburger-icon"></i><i
+                    class="fas fa-times close-icon"></i></button>
+        </nav>

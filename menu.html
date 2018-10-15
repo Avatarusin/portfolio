@@ -13,19 +13,22 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <h1> Porto Soleggiato Pizza</h1>
-        <ul class="navList">
-            <li class="menu"><a href="index.html" id="href">Main</a></li>
-            <li class="menu"><a href="menu.html" id="href">Menu</a></li>
-            <li class="menu"><a href="shop.html" id="href">Shop</a></li>
-            <li class="menu"><a href="gallery.html" id="href">Gallery</a></li>
-            <li class="menu"><a href="signIn.html" id="href">Sign in / Log in</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <!-- <img src="images/pizza2gallery.jpg"> -->
-    </div>
+    <header class="page-header">
+        <a href="index.html" title="Go back to homepage" class="page-home">
+            <h1 class="page-logo">Porto Soleggiato Pizza</h1>
+        </a>
+        <nav class="page-nav">
+            <ul class="navigation-menu">
+                <li><a href="menu.html" id="href">Menu</a></li>
+                <li><a href="shop.html" id="href">Shop</a></li>
+                <li><a href="gallery.html" id="href">Gallery</a></li>
+                <li class="sign-up"><a href="signIn.html">Log in</a></li>
+            </ul>
+            <button type="button" title="Open menu" class="hamburger"><i class="fas fa-bars hamburger-icon"></i><i
+                    class="fas fa-times close-icon"></i></button>
+        </nav>
+    </header>
+    <div class="container"></div>
     <section class="menu">
         <div class="pizza">
             <div class="title">
@@ -152,13 +155,14 @@
                 </select>
             </div>
         </div>
-        <footer class="foot">
-            <div>
-                <p>Uncopyright &copy; 2018 <strong>Sebastian W.</strong></p>
-                <p>This site is protected by law</p>
-            </div>
-        </footer>
     </section>
+    <footer class="foot">
+        <div>
+            <p>&copy; 2018 <strong>Sebastian W.</strong></p>
+            <p>This site is protected by law</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

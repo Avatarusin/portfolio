@@ -1,156 +1,155 @@
+:root {
+    --white: rgba(255, 255, 255, .8);
+    --nv-cl: white;
+    font-size: 62.5%;
+}
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Italianno', cursive, Arial, Helvetica, sans-serif;
+    font-family: 'Italianno', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-section {
-    position: absolute;
-    width: 100vw;
-    /* height: 230vh; */
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
+body {
     background-image: url("../images/pizzaBackgroundSignIn1.jpg");
 }
 
-/* Navigation */
-nav {
-    position: relative;
-    display: flex;
+
+/*  Header with nav*/
+.page-header {
     background-color: white;
-    height: 10vh;
-    width: 100vw;
-    margin: 0 auto;
-    align-items: stretch;
-    justify-content: space-around;
-    overflow: hidden;
-}
-
-nav div.logo {
-    display: block;
-    position: relative;
-    height: 20vh;
-    width: 20vh;
-    transform: translate(-200%, -50%) scale(.7);
-}
-
-nav h1 {
-    position: relative;
-    font-size: 7vh;
-    line-height: 10vh;
-}
-
-ul {
-    position: relative;
-    display: flex;
-    font-size: 5vh;
-    list-style: none;
-    line-height: 10vh;
-}
-
-ul li {
-    display: block;
-    padding: 0 2vw;
-}
-
-li a {
-    text-decoration-line: none;
-    color: black;
-    text-decoration-color: red;
-    transition: 0.3s linear;
-}
-
-li a:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
-}
-
-/* footer */
-
-footer {
-    position: relative;
-    display: flex;
-    height: 10vh;
     width: 100%;
-    background-color: whitesmoke;
+    padding: 10px 20px;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.page-header a {
+    text-decoration: none;
+}
+
+.page-logo {
     color: black;
-    align-self: center;
-    align-content: space-around;
+    font-size: 4.5rem;
+    width: 90%;
+    background-color: white;
+    box-sizing: border-box;
 }
 
-.foot div {
-    display: flex;
-    font-size: 2rem;
-    height: 10vh;
-    width: 40%;
-    margin: 0 auto;
-    padding-left: 3vw;
+.page-nav .hamburger {
+    border: 0;
+    background: 0;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 2.6rem;
 }
 
-.foot div p {
-    padding-left: 3vw;
-    line-height: 10vh;
+.page-nav .hamburger .close-icon {
+    display: none;
+}
+
+.page-nav .navigation-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+    margin-top: 30px;
+}
+
+.page-nav .navigation-menu li {
+    border-bottom: 1px solid lightcoral;
+    padding: 15px 0 15px;
+    width: 80%;
+    margin: auto;
+}
+
+.page-nav .navigation-menu li.sign-up {
+    border: 0;
+}
+
+.page-nav .navigation-menu li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.6rem;
+    color: black;
+}
+
+.page-header .nav-opened {
+    -webkit-box-shadow: 0px 14px 26px 0px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 14px 26px 0px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 14px 26px 0px rgba(0, 0, 0, 0.58);
+}
+
+.page-header.page-header.nav-opened .page-nav .hamburger .hamburger-icon {
+    display: none;
+}
+
+.page-header.page-header.nav-opened .page-nav .hamburger .close-icon {
+    display: block;
+}
+
+.page-header.nav-opened .navigation-menu {
+    display: none;
+}
+
+.page-header.nav-opened .navigation-menu {
+    display: block;
 }
 
 /* Sign In section */
 
-/* #background {
-    display: block;
-    width: 100%;
-    height: 80vh;
-    background-color: transparent;
-    z-index: -999;
-} */
 
 .sign-in-section {
     position: relative;
-    display: block;
-    height: 80vh;
+    min-height: 90vh;
     width: 100%;
-}
-
-.sign-in-section .imageBackground {
-    position: relative;
-    display: flex;
-    height: 80vh;
-    width: 100vw;
+    justify-content: center;
 }
 
 /* Log in box */
 
 .log-box {
-    position: absolute;
-    height: 60vh;
-    width: 20vw;
+    min-height: 60vh;
+    width: 80%;
+    max-width: 340px;
+    margin: 30px auto;
     background-color: rgba(255, 255, 255, .9);
-    top: 5vh;
-    left: 10vh;
     text-align: center;
     padding: 5vh;
+    /* display: none; */
 }
 
+
 .log-box h1 {
-    font-size: 3rem;
-    padding-bottom: 2vh;
+    font-size: 5rem;
+    padding-bottom: 20px;
 }
 
 .log-box legend {
-    text-align: center;
     font-size: 4rem;
     background-color: rgba(255, 0, 0, 0.8);
     border-radius: 50%;
-    height: 10vh;
-    width: 10vh;
+    height: 100px;
+    width: 100px;
     color: white;
-    line-height: 12vh;
+}
+
+.log-box legend i {
+    line-height: 100px;
+    text-align: center;
+    font-size: 6rem;
 }
 
 .log-box-form p {
     margin: 0;
-    padding: 0;
-    font-size: 2rem;
+    padding: 10px 0;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -159,11 +158,14 @@ footer {
     margin-bottom: 2vh;
 }
 
-.log-box-form input[type="submit"],
-.log-box-form input[type="email"],
-.log-box-form input[type="password"],
-.log-box-form a {
+.log-box .log-box-form input,
+.log-box .log-box-form input[type="submit"],
+.log-box .log-box-form input[type="email"],
+.log-box .log-box-form input[type="password"],
+.log-box .log-box-form a {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 10px 0;
 }
 
 .log-box-form input[type="email"],
@@ -177,10 +179,10 @@ footer {
 }
 
 .log-box-form input[type="submit"] {
-    width: 50%;
-    height: 3vh;
-    margin-top: 2vh;
-    text-align: center;
+    width: 60%;
+    height: 36px;
+    margin-top: 20px;
+    line-height: 16px;
     background-color: red;
     border-radius: 20px;
     color: white;
@@ -196,7 +198,7 @@ footer {
 .log-box-form a {
     margin-top: 4vh;
     text-decoration: none;
-    font-size: 1.5vh;
+    font-size: 2rem;
     line-height: 4vh;
     color: lightcoral;
 }
@@ -204,7 +206,7 @@ footer {
 .log-box-form a:hover {
     margin-top: 4vh;
     text-decoration: none;
-    font-size: 1.5vh;
+    font-size: 2rem;
     line-height: 4vh;
     color: black;
 }
@@ -212,36 +214,39 @@ footer {
 /* Sign in box */
 
 .sign-box {
-    position: absolute;
-    height: 67vh;
-    width: 20vw;
+    min-height: 60vh;
+    width: 80%;
+    max-width: 340px;
+    margin: 20px auto 30px;
     background-color: rgba(255, 255, 255, .9);
-    top: 4vh;
-    left: 60vh;
     text-align: center;
     padding: 5vh;
 }
 
 .sign-box h1 {
-    font-size: 3rem;
-    padding-bottom: 1vh;
+    font-size: 5rem;
+    padding-bottom: 20px;
 }
 
 .sign-box legend {
-    text-align: center;
     font-size: 4rem;
     background-color: rgba(255, 0, 0, 0.8);
     border-radius: 50%;
-    height: 10vh;
-    width: 10vh;
+    height: 100px;
+    width: 100px;
     color: white;
-    line-height: 12vh;
+}
+
+.sign-box legend i {
+    line-height: 100px;
+    text-align: center;
+    font-size: 6rem;
 }
 
 .sign-box-form p {
     margin: 0;
     padding: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -250,11 +255,13 @@ footer {
     margin-bottom: 2vh;
 }
 
-.sign-box-form input[type="submit"],
-.sign-box-form input[type="text"],
-.sign-box-form input[type="email"],
-.sign-box-form input[type="password"] {
+.sign-box .sign-box-form input[type="submit"],
+.sign-box .sign-box-form input[type="text"],
+.sign-box .sign-box-form input[type="email"],
+.sign-box .sign-box-form input[type="password"] {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 10px 0;
 }
 
 .sign-box-form input[type="email"],
@@ -264,15 +271,15 @@ footer {
     border-bottom: 1px solid red;
     background: transparent;
     outline: none;
-    height: 2vh;
+    height: 20px;
     font-size: .6rem;
 }
 
 .sign-box-form input[type="submit"] {
     width: 50%;
-    height: 3vh;
-    margin-top: 2vh;
-    text-align: center;
+    height: 36px;
+    margin-top: 40px;
+    line-height: 14px;
     background-color: red;
     border-radius: 20px;
     color: white;
@@ -283,4 +290,93 @@ footer {
     cursor: pointer;
     background-color: black;
     color: white;
+}
+
+/* turn off */
+
+.log-box.off {
+    display: none;
+}
+
+.sign-box.off {
+    display: block;
+}
+
+/* Footer */
+
+.foot {
+    background-color: white;
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (min-width: 48em) {
+    .sign-in-section .image-background {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .page-header h1 {
+        font-size: 4.5rem;
+    }
+
+    .page-nav .hamburger {
+        display: none;
+    }
+
+    .page-nav {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    .page-nav .navigation-menu {
+        margin: 20px 10px;
+        display: block;
+        text-align: center;
+    }
+
+    .page-nav .navigation-menu li {
+        text-align: center;
+        display: inline;
+        border: 0;
+        top: 0;
+        margin-right: 30px;
+        font-size: 4rem;
+    }
+
+    .page-nav .navigation-menu li a {
+        font-family: 'Italianno', Arial, Helvetica, sans-serif;
+        text-decoration: red none;
+        font-size: 4.6rem;
+        color: black;
+        transition: 1s linear;
+    }
+
+    .page-nav .navigation-menu li a:hover {
+        text-decoration: red underline;
+    }
+
+    .log-box {
+        position: absolute;
+        height: 600px;
+        width: 400px;
+        top: 5vh;
+        left: 5vh;
+    }
+
+    .sign-box {
+        position: absolute;
+        height: 700px;
+        width: 400px;
+        top: 6vh;
+        left: 52vh;
+    }
+
+
+    .foot p {
+        display: inline;
+        padding: 0 30px;
+    }
 }
